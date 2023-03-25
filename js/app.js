@@ -12,7 +12,7 @@ function users(thing){
   //making a loop to go through the words
     for (let i=0 ; i < thing.length; i++ ){
       //creating an if statement to determin if they are greater than 10 characters
-      if (thing.length < 10){
+      if (thing.length > 10){
         //returning true if they are greater
         return true;
       }
@@ -21,7 +21,27 @@ function users(thing){
     }
 }
 //making the 3 different instances 
-users([`cat`]);
-users([`doesthiscount`])
-users([`jerry`])
+let thing = [`cat`]
+users(thing);
+thing=(`doesthiscount`)
+users(thing)
+thing=(`jerry`)
+users(thing)
 
+//making a new function to determine the starting letters
+ function spec_letters(Words){
+  //adding a for loop that will go through "words" to see if it has a ph in it
+for (let i = 0 ; i < Words.length ; i++){
+  if(Words.includes(`ph`) = true){
+    //returns true if it does
+    return true;
+  }
+  //and false if it doesnt
+  return false;
+}
+ }
+ //calling apon the function with an array of words
+ let Words = 'philadelphia'
+ spec_letters(Words)
+ Words = 'pittsburgh'
+ spec_letters(Words)
