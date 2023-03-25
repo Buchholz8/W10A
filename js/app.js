@@ -1,21 +1,27 @@
+//creating a function to do basic math
 function multiply_math(num1 , num2) {
+  //creeating the problem
     let problem = [(num1 + num2) * 5];
-        console.log(problem)
+    //returning the problem
+        return problem
 }
-let end_number = multiply_math(2 , 4);
-console.log(end_number)
+multiply_math(2 , 4);
 
-function users(things){
-    for (let i=0 ; i < things.length; i++ ){
-      if (things.length < 10){
+//creating a fuction to see is a word is greater than 10 characters
+function users(thing){
+  //making a loop to go through the words
+    for (let i=0 ; i < thing.length; i++ ){
+      //creating an if statement to determin if they are greater than 10 characters
+      if (thing.length < 10){
+        //returning true if they are greater
         return true;
       }
+      //returning false if they arnt
     return false ;
     }
 }
-things = users([`cat`,`dog`,`fish`,`bird`]);
-console.log(things)
-things =users([`jack`,`tom`,`jerry`,`alfred`,`john`,`liam`,`tim`,`logan`,`chase`,`jen`,`jasmine`])
-console.log(things)
-things = users([`jerry`,`tom`])
-console.log(things)
+//making the 3 different instances 
+users([`cat`]);
+users([`doesthiscount`])
+users([`jerry`])
+
